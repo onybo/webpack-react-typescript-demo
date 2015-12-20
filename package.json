@@ -1,0 +1,43 @@
+{
+  "name": "webpack-react-typescript-demo",
+  "version": "0.0.1",
+  "description": "Demo app showing how to get started using webpack, react and typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-server": "webpack-dev-server --hot --progress --colors",
+    "web-server": "http-server -p 3000 .",
+    "start": "npm run webpack-server & npm run web-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onybo/webpack-react-typescript-demo.git"
+  },
+  "author": "Olav Nybø",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onybo/webpack-react-typescript-demo/issues"
+  },
+  "homepage": "https://github.com/onybo/webpack-react-typescript-demo#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel-core": "^6.3.21",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "node-sass": "^3.4.2",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.1.2",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^0.7.2",
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
