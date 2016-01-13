@@ -1,5 +1,5 @@
 module.exports = {
-    entry: getEntrySources(['./app/index.ts']),
+    entry: getEntry(),
     output: {
         publicPath: 'http://localhost:8080/',
         filename: 'dist/bundle.js'
@@ -28,8 +28,7 @@ module.exports = {
                 test: /\.tsx?$/,
                 exclude: /(node_modules)/,
                 loaders: [
-                    'react-hot',
-                    'babel?presets[]=es2015',                  
+                    'babel',                  
                     'ts-loader'
                 ]
             }
@@ -40,11 +39,14 @@ module.exports = {
     }
 };
 
-function getEntrySources(sources) {
-    if (process.env.NODE_ENV !== 'production') {
-        sources.push('webpack-dev-server/client?http://localhost:8080');
-        sources.push('webpack/hot/only-dev-server');
-    }
+function getEntry() {
+  var entry = [];
 
-    return sources;
-}
+  if (process.env.NODE_ENV !== 'production') { //only want hot reloading when in dev.
+        entry.push('webpack-dev-server/client?http://localhost:8080');
+        entry.push('webpack/hot/only-dev-server');
+  }
+
+  entry.push('./app/index.ts');
+  return entry;
+};
