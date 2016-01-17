@@ -165,6 +165,7 @@ bower_components/
 **/typings/*
 !**/typings/require.d.ts
 !**/typings/tsd.d.ts
+!**/typings/material-ui.d.ts
 app/**/*.js
 app/**/*.js.map
 
@@ -202,3 +203,6 @@ FakesAssemblies/
 
 # OS X folder file
 **/.DS_Store
+
+# Visual Studio Code workspace settings file
+**/.vscode

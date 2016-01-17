@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "sourceMap": true,
+    "jsx": "react"
+  },
+  "files": [
+    "app/index.ts",
+    "app/components/App.tsx",    
+    "app/components/Item.tsx",
+    "app/components/ItemList.tsx",
+    "app/data/items.ts",
+    "typings/tsd.d.ts"
+  ]
+}
