@@ -162,9 +162,9 @@ ClientBin/
 *.publishsettings
 node_modules/
 bower_components/
-typings/*
-!typings/require.d.ts
-!typings/tsd.d.ts
+**/typings/*
+!**/typings/require.d.ts
+!**/typings/tsd.d.ts
 app/**/*.js
 app/**/*.js.map
 
@@ -199,3 +199,6 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# OS X folder file
+**/.DS_Store
