@@ -7,6 +7,8 @@ declare module MaterialUi {
   class CardHeader extends __React.Component<any, any> {}
   class FlatButton extends __React.Component<any, any> {}
   class CardText extends __React.Component<any, any> {}
+  class SelectField extends __React.Component<any, any> {}
+  class MenuItem extends __React.Component<any, any> {}
   
   const injectTapEventPlugin:() => void; 
 }
@@ -33,6 +35,14 @@ declare module "material-ui/lib/flat-button" {
 
 declare module "material-ui/lib/card/card-text" {
   export default MaterialUi.CardText
+}
+
+declare module "material-ui/lib/select-field" {
+  export default MaterialUi.SelectField
+}
+
+declare module "material-ui/lib/menus/menu-item" {
+  export default MaterialUi.MenuItem
 }
 
 declare module "react-tap-event-plugin" {
